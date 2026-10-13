@@ -1,0 +1,29 @@
+1. Minimum and maximum
+   floor = 1200 seats
+   max = 2000 seats, k = 1.67
+
+2. Rotation proof (people per day in a group of 5): [3, 3, 3, 3, 3]
+
+3. Scenario table (k values are illustrative)
+   k      peak%   seats   avg utilisation
+   1.00     60%    1200    100%
+   1.20     72%    1440     83%
+   1.33     80%    1600     75%
+   1.50     90%    1800     67%
+   1.67    100%    2000     60%
+   seats per 0.1 of k: 120
+
+4. Random buffer, independent attendance (p = 0.6)
+   H=2000: sd=21.9, extra=36.0 seats = 3.0% of average
+   H=400: sd=9.8, extra=16.1 seats = 6.7% of average
+
+5. Holiday week: 3 days in a 4-day week = 75% of headcount (vs 60%)
+
+6. Made-up three-office example
+   A: H=1000, k=1.2 -> 720 seats
+   B: H=600, k=1.3 -> 468 seats
+   C: H=400, k=1.4 -> 336 seats
+   total = 1524
+
+7. Censored demand illustration (made-up)
+   check-ins=1200 (100% utilisation), turned away=150 (11% of those who wanted a seat)
